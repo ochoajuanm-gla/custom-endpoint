@@ -1,7 +1,7 @@
-site_name: Platform
+site_name: Data Analysis
 site_description: A netcore microservices chassis
-site_author: Facundo Glaeser
-site_url: https://ochoajuanm-gla.github.io/documentacion/
+site_author: Gonzalo Herrera 
+site_url: https://data-office.github.io/docs/
 
 theme:
   name: material
@@ -9,11 +9,11 @@ theme:
   features:
     - tabs
   palette:
-    primary: red
+    primary: black
   font:
     text: Roboto
     code: Roboto Mono
-  logo: 'images/logo2.png'
+  logo: 'images/A-andreani.png'
 
 markdown_extensions:
   - markdown.extensions.admonition
@@ -25,64 +25,37 @@ markdown_extensions:
   - pymdownx.tabbed
 
 nav:
-  - Version 3.1:
-    - Overview: index.md
-    - Quick Start: quickstart.md
-    - AppSettings: appsettings.md
-    - Logging: 
-      - Serilog: logging.md
-      - LogLevel Api: loglevel.md
-    - ORM:
-      - DataAccessRegistry: dataaccessregistry.md  
-      - DataAccess: dataaccess.md
-    - BackgroundService: backgroundservice.md  
-    - Windows Service: windowsservice.md  
-    - RESTful Api: api.md
-    - Middlewares: middlewares.md  
-    - EventBus: 
-      - Setup: eventbus.md
-      - Generic Handler: generic-handler.md
-      - CircuitBreaker: circuitbreaker.md
-    - EventBus BOQ: eventbus-boq.md
-    - Info Api: info-api.md  
-    - Doc Api: api-docs.md
-    - HealthChecks : health-check-api.md
-    - Metrics: metrics.md    
-    - Rest API Problem Details: problemdetails.md   
-    - Testing XUnit: testing-xunit.md
-    - Troubleshooting: troubleshooting.md
-    - AMQStreams Andreani:
-      - Configuration: AMQStreams.md  
-      - Producers: producers.md  
-      - Consumers: consumers.md
-  - Version 2.1:    
-    - Overview: 2.1/index.md
-    - AppSettings: 2.1/appsettings.md
-    - Logging: 2.1/logging.md
-    - ORM:
-      - DataAccessRegistry: 2.1/dataaccessregistry.md  
-      - DataAccess: 2.1/dataaccess.md
-    - LongRunningService: 2.1/longrunningservice.md
-    - Windows Service: 2.1/windowsservice.md
-    - RESTful Api: 2.1/api.md
-    - Middlewares: 2.1/middlewares.md
-    - EventBus: 2.1/eventbus.md
-    - EventBus BOQ: 2.1/eventbus-boq.md
-    - Info API: 2.1/info-api.md
-    - Doc Api: 2.1/api-docs.md
-    - HealthCheck:
-      - Health API: 2.1/health-check-api.md
-      - Ibm MQ Health Indicator: 2.1/healthindicators/IbmQueueManagerHealthIndicator.md
-      - Ibm MQ Queue Health Indicator: 2.1/healthindicators/IbmQueueHealthIndicator.md
-      - Elasticsearch Health Indicator: 2.1/healthindicators/ElasticSearchHealthIndicator.md
-      - Elasticsearch Index Health Indicator: 2.1/healthindicators/ElasticSearchIndexHealthIndicator.md
-      - MongoDB Health Indicator: 2.1/healthindicators/MongoDBHealthIndicator.md
-      - Oracle Health Indicator: 2.1/healthindicators/OracleHealthIndicator.md
-      - Redis Health Indicator: 2.1/healthindicators/RedisHealthIndicator.md
-      - Redis Key Health Indicator: 2.1/healthindicators/RedisKeyHealthIndicator.md
-      - SqlServer Health Indicator: 2.1/healthindicators/SqlServerHealthIndicator.md
-    - Metrics: 2.1/metrics.md
-    - Testing XUnit: 2.1/testing-xunit.md
-    - Rest API Problem Details: 2.1/problemdetails.md
-    - Troubleshooting: 2.1/troubleshooting.md
+  - Overview: index.md
+  - Aquitectura : arquitectura.md
+  - Azure Databricks:
+    - Overview: overview_databricks.md
+    - Conceptos: concepts_databricks.md
+    - Databricks Data Sciente & Engineering: databricks_datascience&engineering.md
+    - Databricks Machine Learning: databricks_machinelearning.md
+    - Databricks SQL: databricks_sql.md
+    - Databricks integrations: databricks_integrations.md
+    - Data Engineering: Data_engineering.md
+  - Gobierno del Dato:
+    - Overview : overview_gobierno_del_dato.md
+    - Purview: purview.md
+  - DevOps:
+    - Overview : EN_CONSTRUCCIÓN.md
+    - DevOps: EN_CONSTRUCCIÓN.md
+  - Airflow:
+    - Overview : overview_airflow.md
+    - DAG : dag.md
+    - Casos de uso : casos_uso.md
+    - Aquitectura : airflow.md
+  - Deequ:
+    - Overview : overview_deequ.md
+  - Sonarqube:
+    - Overview : overview_Sonarqube.md
+    - SonarQube : sonarqube.md
+  - Glosario de Términos: glosario_de_terminos.md
+  - Links de interes: link_interes.md
+  
+    
+  ##- Version 2.1:    
+  ##  - Overview: 2.1/index.md
+    
   
